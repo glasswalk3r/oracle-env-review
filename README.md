@@ -8,6 +8,13 @@ installed with Universal Installer.
 A set of scripts (mostly written in Perl) used to find, identify and extract
 information on Oracle application that were installed on a Linux server.
 
+Currently applications supported:
+- BRM
+- Oracle eBusiness Suite (EBSO)
+- Oracle HTTP Server (OHS)
+- Siebel
+- Weblogic
+
 ## Why?
 
 At the last job that I worked with Oracle products, all those that were
@@ -44,8 +51,8 @@ Universal Installer, which doesn't care about other applications installed with
 it.
 
 Now, why Oracle didn't ship those same applications packaged as RPM packages
-it's beyond me. It sure as hell it would be much easier to fetch and process
-that information.
+it's beyond me. You can bet your ass it would be much easier to fetch and
+process all information in that way.
 
 ## How it works?
 
@@ -94,14 +101,14 @@ Oracle database!
 
 You might use only pieces of this repository. When it is all about getting the
 information out of an Oracle application, you probably won't need to Google
-around about how to do it.
+around about how to do it to get it's version and other stuff.
 
 You might also wondering how to get around PowerBroker to read a program output.
 This is already implemented with a set of named pipes and Expect to workaround
 any dialog from it, which makes your life miserable when using SSH.
 
-Usually using Threads with Perl is a bad idea, but in this case you can use
-it safely to connect to several servers in parallel, making all the process
+Usually using Threads with Perl is usually a bad idea, but in this case you can
+use it safely to connect to several servers in parallel, making all the process
 to finish faster.
 
 ### The Bad
